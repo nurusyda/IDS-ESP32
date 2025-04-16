@@ -1,5 +1,5 @@
-"KDDTrain+.txt" 
-"KDDTest+.txt" 
-"*.npy" 
-"*.pkl" 
-".ipynb_checkpoints/" 
+ 
+centroids.npy
+cov.npy
+mean.npy
+std.npy
