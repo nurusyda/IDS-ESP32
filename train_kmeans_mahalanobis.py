@@ -44,7 +44,7 @@ def preprocess_data(df):
     y_binary = (y != 'normal').astype(int)
     
     # Select top 6 features using ANOVA F-test for efficiency
-    selector = SelectKBest(score_func=f_classif, k=6)
+    selector = SelectKBest(score_func=f_classif, k=8)
     X_selected = selector.fit_transform(X, y_binary)
     selected_features = X.columns[selector.get_support()].tolist()
     
